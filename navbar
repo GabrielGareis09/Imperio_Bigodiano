@@ -1,0 +1,60 @@
+.navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000000;
+      padding: 20px 200px;
+    }
+
+    .navbar .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;  
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 50px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .navbar ul li a:hover {
+      color: #f0a500;
+    }
+
+
+
+
+
+
+
+
+
+
+<div>
+      <nav class="navbar">
+          
+          <img class="logo" src="https://i.ibb.co/mF8YPJpJ/Chat-GPT-Image-2-de-jul-de-2025-15-12-37.png" alt="Chat-GPT-Image-2-de-jul-de-2025-15-12-37">
+      
+          <ul>
+              <li><a>O IMPÉRIO</a></li>
+              <li><a>HISTÓRIA</a></li>
+              <li><a>EVENTOS</a></li>
+              <li><a>LOCALIZAÇÃO</a></li>
+              <li><a>PONTOS TURÍSTICOS</a></li>
+          </ul>
+      
+      </nav>
+    </div>
