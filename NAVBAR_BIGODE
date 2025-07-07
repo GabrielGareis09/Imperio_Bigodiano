@@ -4,6 +4,7 @@
       justify-content: space-between;
       background-color: #000000;
       padding: 20px 200px;
+      
     }
 
     .navbar .logo {
@@ -21,13 +22,17 @@
       margin-left: 50px;
     }
 
-    .navbar ul li a {
+    .link {
       color: white;
       text-decoration: none;
       font-size: 16px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       transition: color 0.3s ease;
       cursor: pointer;
+    }
+
+    .link_ativ {
+      color: #f0a500;
     }
 
     .navbar ul li a:hover {
@@ -43,17 +48,23 @@
 
 
 
+
+
+
+
+
+
 <div>
       <nav class="navbar">
           
-          <img class="logo" src="https://i.ibb.co/mF8YPJpJ/Chat-GPT-Image-2-de-jul-de-2025-15-12-37.png" alt="Chat-GPT-Image-2-de-jul-de-2025-15-12-37">
+          <a href="paginainicial.html"><img class="logo" src="https://i.ibb.co/mF8YPJpJ/Chat-GPT-Image-2-de-jul-de-2025-15-12-37.png" alt="Chat-GPT-Image-2-de-jul-de-2025-15-12-37"></a>
       
           <ul>
-              <li><a>O IMPÉRIO</a></li>
-              <li><a>HISTÓRIA</a></li>
-              <li><a>EVENTOS</a></li>
-              <li><a>LOCALIZAÇÃO</a></li>
-              <li><a>PONTOS TURÍSTICOS</a></li>
+              <li><a class="link" href="o_imperio.html">O IMPÉRIO</a></li>
+              <li><a class="link" href="historia.html">HISTÓRIA</a></li>
+              <li><a class="link" href="eventos.html">EVENTOS</a></li>
+              <li><a class="link" href="localizacao.html">LOCALIZAÇÃO</a></li>
+              <li><a class="link" href="pontos_turisticos.html">PONTOS TURÍSTICOS</a></li>
           </ul>
       
       </nav>
