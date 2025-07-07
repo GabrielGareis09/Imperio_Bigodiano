@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O IMPÉRIO</title>
+</head>
+ <style>
+    body { 
+        margin: 0;
+    }   
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000000;
+      padding: 20px 200px;
+    }
+
+    .navbar .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;  
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 50px;
+    }
+
+    .link {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .link_ativ {
+      color: #f0a500;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      cursor: pointer;
+    }
+
+    .navbar ul li a:hover {
+      color: #f0a500;
+    }
+    
+    .flex{
+        display: flex;
+    }
+
+    .menu {
+        width: 100px;
+        background: #333;
+        color: #fff;
+    }
+    
+    .menu div {
+        padding: 10px;
+        cursor: pointer; 
+    }
+    
+    .menu div:hover {
+        background: #444; 
+    }
+    
+    .info {
+        display: none;
+        padding: 20px; 
+    }
+    
+    .info.ativo {
+        display: block; 
+    }
+  
+  
+  </style>
+<body>
+
+     <div>
+      <nav class="navbar">
+          
+          <a href="paginainicial.html"><img class="logo" src="https://i.ibb.co/mF8YPJpJ/Chat-GPT-Image-2-de-jul-de-2025-15-12-37.png" alt="Chat-GPT-Image-2-de-jul-de-2025-15-12-37"></a>
+      
+          <ul>
+              <li><a class="link_ativ" href="o_imperio.html">O IMPÉRIO</a></li>
+              <li><a class="link" href="historia.html">HISTÓRIA</a></li>
+              <li><a class="link" href="eventos.html">EVENTOS</a></li>
+              <li><a class="link" href="localizacao.html">LOCALIZAÇÃO</a></li>
+              <li><a class="link" href="pontos_turisticos.html">PONTOS TURÍSTICOS</a></li>
+          </ul>
+      
+      </nav>
+    </div>
+
+    <div class="flex">
+    <div class="menu">
+    <div onclick="mostrar('t1')">Tópico 1</div>
+    <div onclick="mostrar('t2')">Tópico 2</div>
+    <div onclick="mostrar('t3')">Tópico 3</div>
+    <div onclick="mostrar('t4')">Tópico 4</div>
+    <div onclick="mostrar('t5')">Tópico 5</div>
+  </div>
+  <div id="t1" class="info ativo">Informação do Tópico 1</div>
+  <div id="t2" class="info">Informação do Tópico 2</div>
+  <div id="t3" class="info">Informação do Tópico 3</div>
+  <div id="t4" class="info">Informação do Tópico 4</div>
+  <div id="t5" class="info">Informação do Tópico 5</div>
+  </div>
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('.info').forEach(el => el.classList.remove('ativo'));
+      document.getElementById(id).classList.add('ativo');
+    }
+  </script>
+</body>
+</html>
