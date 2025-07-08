@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS - IMPÉRIO BIGODIANO</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        background-color: #111;
+    }
+    
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 20px 200px;
+  }
+
+  .navbar .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;  
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin-left: 50px;
+  }
+
+  .link {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .link_ativ {
+      color: #f0a500;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      cursor: pointer;
+    }
+
+  .navbar ul li a:hover {
+    color: #f0a500;
+  }
+
+  .eve{
+    color: #f0a500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .quadrados_esquerda {
+    background-color: #727272;
+    margin-bottom: 30px; 
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+  }
+   .quadrados_esquerda:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .quadrados_esquerda h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .quadrados_esquerda p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    transition: transform 0.7s ease;
+  }
+  .quadrados_esquerda:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .quadrado_direita {
+    background-color: #727272;
+    width: 600px;
+    height: 1100px;
+    border-radius: 30px;
+    margin-top: 30px;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  .quadrado_direita:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .quadrado_direita h1{
+    color: #f0a500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.0;
+    padding-top: 50px;
+    font-size: 80px;
+  }
+   .quadrado_direita p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+   }
+
+  h1 {
+    text-align: center;
+    font-size: 35px;
+   
+  }
+
+  p {
+    margin: 50px;
+    font-size: 18px;
+    
+  }
+
+  .imgbidode_ouro {
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    margin-top: 30px;
+  }
+
+  .imgbigode_prata {
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    margin-top: 30px;
+  }
+
+  .imgbigode_bronze {
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    margin-top: 30px;
+  }
+
+  .imgbigode {
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    margin-top: 30px;
+  }
+
+  .coluna_esquerda {
+    max-width: 700px;
+    flex: 1;
+  }
+
+  .coluna_direita {
+    max-width: 500px;
+    flex: 1;
+  }
+
+  .img_noticia {
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 100px;
+    margin-top: 30px;
+    border: solid #f0a500;
+  }
+
+  .container_geral {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 40px;
+    padding-right: 70px;
+    background-color: #0e0e0e;
+    padding-bottom: 40px;
+  } 
+  footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer .linha {
+      margin-top: 10px;
+      color: #888;
+      font-size: 12px;
+    }
+
+
+</style>
+<body>
+     <div>
+      <nav class="navbar">
+          
+          <a href="paginainicial.html"><img class="logo" src="https://i.ibb.co/mF8YPJpJ/Chat-GPT-Image-2-de-jul-de-2025-15-12-37.png" alt="Chat-GPT-Image-2-de-jul-de-2025-15-12-37"></a>
+      
+          <ul>
+              <li><a class="link" href="o_imperio.html">O IMPÉRIO</a></li>
+              <li><a class="link" href="historia.html">HISTÓRIA</a></li>
+              <li><a class="link_ativ" href="eventos.html">EVENTOS</a></li>
+              <li><a class="link" href="localizacao.html">LOCALIZAÇÃO</a></li>
+              <li><a class="link" href="pontos_turisticos.html">PONTOS TURÍSTICOS</a></li>
+          </ul>
+      
+      </nav>
+    </div>
+
+<div class="eve">
+  <h1>FIQUE POR DENTRO DOS EVENTOS MAIS BIGODUDOS</h1>
+</div>
+
+
+    <div class="container_geral">
+
+ <div class="coluna_esquerda">
+      <div class="quadrados_esquerda">
+        <h1 class="">BIGODE OURO</h1>
+        <img class="imgbidode_ouro" src="https://bing.com/th/id/BCO.5f615405-3b08-4b9f-aba9-885496ca6374.png"> 
+        <p>No ápice do Campeonato Nacional de Bigodes, o Bigode de Ouro é entregue ao cidadão cujo bigode ultrapassa os limites da estética e se torna uma verdadeira obra de arte imperial. Seu porte, densidade, simetria e presença impõem respeito por onde passa.
+           Ele não apenas venceu o campeonato — ele gravou sua barba na história do Império. Um símbolo vivo da soberania bigodiana.</p>
+
+      </div>
+  
+
+
+      <div class="quadrados_esquerda">
+
+          <h1>BIGODE PRATA</h1>
+          <img class="imgbigode_prata" src="https://bing.com/th/id/BCO.cb259012-5332-4589-a7b3-f83211cceb56.png">
+          <p>O segundo colocado do campeonato carrega com orgulho o título de Bigode de Prata. Seu bigode, embora não tenha atingido o auge da glória, foi reconhecido por sua beleza refinada, alinhamento preciso e porte digno de um conselheiro real.
+             Representa o equilíbrio entre tradição e inovação, e mostra que a nobreza do fio vai além do ouro.</p>
+
+      </div>
+
+      <div class="quadrados_esquerda">
+
+        <h1>BIGODE BRONZE</h1>
+        <img class="imgbigode_bronze" src="https://bing.com/th/id/BCO.8d359e34-7828-4a5a-b8e1-d284970a089a.png">
+        <p>O Bigode de Bronze é entregue ao bigodiano que encantou o povo com carisma, criatividade e firmeza. Este bigode representa os valores da base do Império, onde cada fio é cultivado com esforço, suor e amor pela pátria.
+           No campeonato, sua presença foi marcante, provando que o verdadeiro espírito bigodiano vive em cada rosto comprometido com a grandeza.</p> 
+
+      </div>
+
+      <div class="quadrados_esquerda">
+
+        <h1>INDEPENDÊNCIA BIGODIANA</h1>
+        <img class="imgbigode" src="https://bing.com/th/id/BCO.5e62b2d7-699a-4138-9667-8909ff666754.png" >
+        <p>Na República Bogidiana, uma vez por ano, os cidadãos deixam suas casas e marcham com seus bigodes ao vento, participando do tradicional Desfile da Honra Bigodiana. Não é só um evento é um ritual de respeito nacional, onde cada bigode é exibido como um troféu de identidade. O povo se reúne para celebrar o tamanho, a forma e a coragem de cada fio cultivado com dedicação. </p>
+
+      </div>
+</div>
+
+<div class="coluna_direita">
+    <div class="quadrado_direita"> 
+
+      <h1>NOTICIA <br>URGENTE!!!</h1>
+      <img class="img_noticia" src="https://bing.com/th/id/BCO.8606781c-9059-421a-a186-ecea87b51c08.png" >
+      <p>Um ato de ousadia desencadeou o caos, um homem teve seu bigode cuidadosamente cultivado por anos arrancado sem aviso por 
+        um “amigo” desavisado, armado com uma lâmina e nenhuma noção. O que se seguiu foi uma explosão de fúria digna de um duelo de faroeste. 
+        Testemunhas relatam socos no ar, gritos de traição e móveis voando. “Era como se ele tivesse cortado a alma do rapaz, não só o bigode”, 
+        disse uma vizinha, ainda em choque. O clima só esfriou depois que ambos foram separados e o agressor pediu perdão, talvez temendo uma vingança 
+        com lâmina dupla. Moral da historia: nunca, jamais toque no bigode de um homem sem consentimento. É como invadir um templo sagrado com chuteiras.
+      <br>
+      <br>
+      <strong>BIGODE DO POVO - O JORNAL DO POVO</strong>
+      </p>
+
+   
+
+</div>
+ </div>
+
+</div>
+
+<footer>
+    <div>© 2025 Império Bigodiano. Todos os direitos reservados.</div>
+    <div class="linha">Desenvolvido com honra, estilo e bigodes.</div>
+  </footer>
+
+</body>
+</html>

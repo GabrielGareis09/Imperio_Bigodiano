@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PONTOS TURÍSTICOS - IMPÉRIO BIGODIANO</title>
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #111;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000000;
+      padding: 20px 200px;
+    }
+
+    .navbar .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;  
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 50px;
+    }
+
+    .link {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .link_ativ {
+      color: #f0a500;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .navbar ul li a:hover {
+      color: #f0a500;
+    }
+
+    .hero {
+      width: 100%;
+      height: 300px;
+      background-image: url('https://i.ibb.co/Kj2M8qhw/sdadsadas.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+      font-family: Verdana, sans-serif;
+    }
+
+    .hero-content h1 {
+      margin: 0;
+      color: #f0a500;
+      font-size: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .hero-content p {
+      font-size: 24px;
+      margin-top: 10px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: lighter;
+      color: #ddd;
+    }
+
+    .area_conteudo {
+      padding: 40px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .bloco_card {
+      background-color: #1a1a1a;
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #d2a656;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .bloco_card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .texto_card {
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .texto_card h3 {
+      color: #f8b62d;
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      font-family: Verdana, sans-serif;
+    }
+
+    .texto_card p {
+      color: #ccc;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .bloco_card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(210, 166, 86, 0.6);
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    footer .linha {
+      margin-top: 10px;
+      color: #888;
+      font-size: 12px;
+    }
+</style>
+<body>
+
+  <div>
+    <nav class="navbar">
+      <a href="paginainicial.html"><img class="logo" src="https://i.ibb.co/mF8YPJpJ/Chat-GPT-Image-2-de-jul-de-2025-15-12-37.png" alt="Logo Império Bigodiano"></a>
+      <ul>
+        <li><a class="link" href="o_imperio.html">O IMPÉRIO</a></li>
+        <li><a class="link" href="historia.html">HISTÓRIA</a></li>
+        <li><a class="link" href="eventos.html">EVENTOS</a></li>
+        <li><a class="link" href="localizacao.html">LOCALIZAÇÃO</a></li>
+        <li><a class="link_ativ" href="pontos_turisticos.html">PONTOS TURÍSTICOS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>DESCUBRA AS JÓIAS DO IMPÉRIO BIGODIANO</h1>
+      <p>Entre palácios, templos e paisagens épicas, viva o extraordinário.</p>
+    </div>
+  </div>
+
+  <main class="area_conteudo">
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/8Lrw6cjh/Copilot-20250706-172142.png" alt="Palácio Supremo dos Bigodes">
+      <div class="texto_card">
+        <h3>Palácio Supremo dos Bigodes</h3>
+        <p>O coração do poder imperial. Repleto de salões de ouro e esculturas de mármore dedicadas à glória das fios faciais.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/ZRY3SkB4/Copilot-20250706-173040.png" alt="Mirante da Barba Eterna">
+      <div class="texto_card">
+        <h3>Mirante da Barba Eterna</h3>
+        <p>Contemple o pôr do sol mais belo do Império do Alto do Monte Bigodaris. Uma experiência mística e inspiradora.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/VW7mzGzX/Copilot-20250706-173059.png" alt="Templo do Pente de Ouro">
+      <div class="texto_card">
+        <h3>Templo do Pente de Ouro</h3>
+        <p>O local sagrado onde a elite se purifica. Um marco espiritual entre a estética e a fé bigodiana.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/kVkDBT5H/Copilot-20250706-173101.png" alt="Torre da Vigilância Celestial">
+      <div class="texto_card">
+        <h3>Torre da Vigilância Celestial</h3>
+        <p>De onde o Império observa os céus. Uma obra de engenharia e soberania tecnológica.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/QF6PLRDY/Copilot-20250706-173506.png" alt="Assembleia das Ceras Sagradas">
+      <div class="texto_card">
+        <h3>Assembleia das Ceras Sagradas</h3>
+        <p>O parlamento onde decisões gloriosas são tomadas sob os olhos de bustos monumentais de líderes bigodudos.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/dXmSM4y/Copilot-20250706-173707.png" alt="Fonte Bigode Real">
+      <div class="texto_card">
+        <h3>Fonte Bigode Real</h3>
+        <p>Dizem que a água dessa fonte rejuvenesce e fortalece os bigodes. Um dos locais mais visitados do império.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/TBDQ7Cn2/Copilot-20250706-173909.png" alt="Arena Imperial dos Fios">
+      <div class="texto_card">
+        <h3>Arena Imperial dos Fios</h3>
+        <p>Sede dos torneios de bigode e dos grandes festivais culturais.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/TxwMVSV1/Copilot-20250706-174113.png" alt="Bosque dos Fundadores">
+      <div class="texto_card">
+        <h3>Bosque dos Fundadores</h3>
+        <p>Trilhas históricas em meio à natureza. Local sagrado e de meditação.</p>
+      </div>
+    </div>
+
+    <div class="bloco_card">
+      <img src="https://i.ibb.co/QvJSWmwm/Copilot-20250706-175115.png" alt="Centro de Inteligência Bigodial">
+      <div class="texto_card">
+        <h3>Centro de Inteligência Bigodial</h3>
+        <p>Trilhas históricas em meio à natureza. Local sagrado e de meditação.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>© 2025 Império Bigodiano. Todos os direitos reservados.</div>
+    <div class="linha">Desenvolvido com honra, estilo e bigodes.</div>
+  </footer>
+
+</body>
+</html>

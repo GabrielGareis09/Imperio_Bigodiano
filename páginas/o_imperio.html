@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O IMPÉRIO - IMPÉRIO BIGODIANO</title>
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #111; 
+    }
+
+     .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000000;
+      padding: 20px 200px;
+    }
+
+    .navbar .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;  
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 50px;
+    }
+
+    .link {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .link_ativ {
+      color: #f0a500;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      cursor: pointer;
+    }
+
+    .navbar ul li a:hover {
+      color: #f0a500;
+    }
+
+    .topo_titulo {
+      text-align: center;
+      padding: 40px 20px 10px;
+      background-color: #111;
+    }
+
+    .topo_titulo h1 {
+      color: #f0a500;
+      font-size: 50px;
+      font-family: Verdana, sans-serif;
+      font-weight: bold;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .caixa_conteudo {
+      background-color: #1a1a1a;
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .caixa_conteudo h2 {
+      color: #f0a500;
+      font-size: 28px;
+      font-family: Verdana, sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .caixa_conteudo p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ddd;
+      font-family: "Segoe UI", sans-serif;
+      margin-bottom: 30px;
+    }
+
+    .pilares-cards {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .caixa_pilar {
+      background-color: #222;
+      border: 2px solid #f0a500;
+      border-radius: 8px;
+      padding: 15px;
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .caixa_pilar h3 {
+      margin: 0 0 10px;
+      color: #f0a500;
+      font-size: 20px;
+      font-family: Verdana, sans-serif;
+    }
+
+    .caixa_pilar p {
+      color: #ccc;
+      font-size: 16px;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .estrutura pre {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-top: 20px;
+      font-family: "Segoe UI", monospace;
+    }
+
+    .simbolos {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .simbolos h2 {
+      margin-bottom: 20px;
+    }
+
+    .simbolos-imgs {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .simbolo-img-retangular {
+      width: 500px;
+      height: auto;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .simbolo-img-menor {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .rodape_texto {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #111;
+      color: white;
+      font-size: 18px;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .rodape_texto span {
+      font-weight: bold;
+      font-family: Verdana, sans-serif;
+      color: #f0a500;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer .linha {
+      margin-top: 10px;
+      color: #888;
+      font-size: 12px;
+    }
+
+    .historia {
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      padding: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+    }
+
+    .historia a {
+      text-decoration: underline;
+      color: white;
+    }
+</style>
+<body>
+  <div>
+    <nav class="navbar">
+      <a href="paginainicial.html"><img class="logo" src="https://i.ibb.co/mF8YPJpJ/Chat-GPT-Image-2-de-jul-de-2025-15-12-37.png" alt="Logo do Império"></a>
+      <ul>
+        <li><a class="link_ativ" href="o_imperio.html">O IMPÉRIO</a></li>
+        <li><a class="link" href="historia.html">HISTÓRIA</a></li>
+        <li><a class="link" href="eventos.html">EVENTOS</a></li>
+        <li><a class="link" href="localizacao.html">LOCALIZAÇÃO</a></li>
+        <li><a class="link" href="pontos_turisticos.html">PONTOS TURÍSTICOS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="topo_titulo">
+    <h1>O IMPÉRIO BIGODIANO</h1>
+  </header>
+
+  <div class="caixa_conteudo">
+    <section class="intro">
+      <h2>Boas vindas</h2>
+      <p>Seja bem-vinda ao Império Bigodiano. Aqui a ordem, a tecnologia e o bigode caminham juntos sob uma única bandeira.</p>
+    </section>
+
+    <section class="about">
+      <h2>Quem somos</h2>
+      <p>O Império Bigodiano é uma potência independente fundada nos valores da disciplina, soberania tecnológica e honra. Nossa identidade gira em torno do bigode, símbolo máximo da sabedoria, respeito e tradição.</p>
+    </section>
+
+    <section class="pilares">
+      <h2>Nossos Pilares</h2>
+      <div class="pilares-cards">
+        <div class="caixa_pilar">
+          <h3>Bigode</h3>
+          <p>Símbolo da sabedoria e tradição</p>
+        </div>
+        <div class="caixa_pilar">
+          <h3>Ordem</h3>
+          <p>Organização social e disciplina</p>
+        </div>
+        <div class="caixa_pilar">
+          <h3>Tecnologia</h3>
+          <p>Inovação como base do futuro</p>
+        </div>
+        <div class="caixa_pilar">
+          <h3>Vigilância</h3>
+          <p>Olhos por toda parte</p>
+        </div>
+        <div class="caixa_pilar">
+          <h3>Soberania</h3>
+          <p>Independência política e cultural</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="estrutura">
+      <h2>Estrutura do império</h2>
+      <pre>
+┌──────────────────────────────────────────┐
+│                   ✨ IMPERADOR SUPREMO ✨                │ 
+│                 "O Guardião do Grande Bigode"                │ 
+└──────────────────────────────────────────┘
+                  │
+        ╭─────────┴──────────╮
+        │                    │
+        ▼                    ▼
+ 👑 Conselho de Fios        ⚙️ Diretoria Tecnofacial
+“Sabedoria e Tradição”      “Inovação com Estilo”
+        │                    │
+        │                    ├── 🛰️ Agência de Satélites e Vigilância
+        │                    ├── 🤖 Laboratório de Bigodes Robóticos
+        │                    └── 🧠 Núcleo de Inteligência Artificial Barbuda
+        │
+        ├── 📜 Ministério da Cultura e Propaganda
+        ├── 📚 Instituto Real de Filosofia Bigodiana
+        └── 🧔 Academia Suprema de Estilo Facial
+
+        ╭──────────────────────────────╮
+        ▼                              ▼
+  🛡️ Exército Bigodiano          ⚖️ Suprema Corte dos Fios
+  “Disciplina, Ordem e Cera”       “A Lei é o Pente”
+        │                              │
+        ├── 🪖 Divisão de Barbudos Blindados
+        ├── 🚁 Força Aérea Mustache
+        └── 🚢 Frota Naval do Bigode Negro
+
+        ╭──────────────────────────────╮
+        ▼                              ▼
+ 💰 Ministério do Comércio        🏙️ Ministério da Ordem Pública
+   e Produção de Cera              e Higienização Bigodial
+        │                              │
+        ├── 🛍️ Mercado Real do Bigode
+        └── 🧴 Conselho de Cosméticos Patrióticos
+      </pre>
+    </section>
+
+    <section class="simbolos">
+      <h2>Simbologia Nacional</h2>
+      <div class="simbolos-imgs">
+        <img class="simbolo-img-retangular" src="https://i.ibb.co/yc6RLQvP/1000063357.jpg" alt="Bandeira do Império">
+        <img class="simbolo-img-menor" src="https://i.ibb.co/LzqSdsxY/1000063358.jpg" alt="Brasão do Império">
+      </div>
+    </section>
+  </div>
+
+  <div class="historia">
+    Você acredita na ordem, na honra e no bigode? <a href="historia.html">Conheça nossa história</a>
+  </div>
+
+  <footer>
+    <div>© 2025 Império Bigodiano. Todos os direitos reservados.</div>
+    <div class="linha">Desenvolvido com honra, estilo e bigodes.</div>
+  </footer>
+</body>
+</html>
